@@ -1,53 +1,38 @@
 # Customer Shopping Behavior Analysis
+Analyzed 3,900 retail transactions with Python, BigQuery, and Power BI to find revenue drivers, margin leaks, and growth levers across customer segments, products, and channels.
 
-## Tech Stack
+## Key Outcomes
 
-- **Python (pandas)** for data cleaning, feature engineering, and preparation.   
-- **BigQuery (SQL)** for scalable segmentation and revenue analysis.   
-- **Power BI** for interactive dashboards and stakeholder-friendly visuals. 
-
----
-
-## Executive Summary
-
-Analyzed 3,900 retail transactions using Python, BigQuery, and Power BI to understand customer shopping behavior across products, segments, and locations.  The project identifies opportunities in subscriptions, discount strategy, merchandising, marketing, payment methods, and inventory to grow revenue and protect margins. 
-
----
+- Male customers generate 2.1x female revenue (USD 157,890 vs 75,191), revealing clear upside in the female segment.
+- 73% of repeat buyers (5+ purchases) are not subscribed, representing a high-ROI target for loyalty and subscription programs.
+- Hat, Sneakers, Coat, Sweater, and Pants rely on 47–50% discounts, suggesting margin erosion and need for pricing tests. 
+- Express shipping users show 3.5% higher AOV (USD 60.48 vs 58.46), indicating a premium, convenience-focused segment.
 
 ## Business Problem
+How can the business grow revenue and CLV while protecting margins?
+- Who are the most valuable customers by gender, age, location and lifecycle?
+- How do discounts, subscriptions, shipping, and payment methods affect profitability and behavior?
+- Which products and sizes should be prioritized in marketing, pricing, and inventory decisions?
 
-The business wanted to move from raw transaction data to clear, segment-level strategies that increase revenue and customer lifetime value.  Key questions included which customers, products, and behaviors drive the most value, and where revenue or margin is being lost (for example, heavy discounts, low subscription adoption, or inefficient marketing). 
+## Data & Approach
 
----
+- **Data:** 3,900 transactions, 18 features across customer attributes, transactions, and behavioral metrics.  
+- **Tools:** Python (cleaning, feature engineering), BigQuery SQL (segmentation and revenue analysis), Power BI (interactive dashboard).
 
-## Dataset
+## Key Insights → Actions
 
-- 3,900 transactions, 18 attributes per transaction.   
-- Customer: Age, Gender, Location, Subscription Status.   
-- Transaction: Item Purchased, Category, Purchase Amount, Season, Size, Color, Shipping Type, Payment Method.   
-- Behavior: Discount Applied, Promo Code Used, Previous Purchases, Frequency of Purchases, Review Rating (37 missing values). 
+- **Rebalance gender revenue mix**  
+  - Insight: Male revenue is 2.1x female.  
+  - Action: Expand female assortment and run female-focused campaigns to unlock an estimated USD 30k–40k in additional female revenue.
 
----
+- **Grow subscriptions from high-frequency buyers**  
+  - Insight: Most repeat buyers (5+ purchases) are not subscribed.  
+  - Action: Launch frequency-based subscription tiers with exclusive perks, targeting a 25–40% uplift in subscription conversion among high-value customers.
 
-## Data Preparation
+- **Protect margins on discount-heavy SKUs**  
+  - Insight: Key products are heavily discounted (47–50%).  
+  - Action: Test lower discount depths and shift to bundles/loyalty offers to improve gross margin by 3–5 percentage points.
 
-- Loaded data into pandas and reviewed structure and distributions with `df.info()` and `.describe()`.   
-- Imputed 37 missing Review Rating values using the median rating by product category.   
-- Standardized column names to `snake_case` and engineered `age_group` and `purchase_frequency_days`.   
-- Removed redundant `promo_code_used` and pushed the cleaned dataset to BigQuery for SQL analysis. 
-
----
-
-## Analysis
-
-### BigQuery SQL Insights
-
-- Revenue by gender: Male revenue is 2.1x female revenue (157,890 vs 75,191), signaling an underdeveloped female segment.   
-- Discounts: Key products (Hat, Sneakers, Coat, Sweater, Pants) rely on 47–50% discounts, which risks margin erosion.   
-- Hero products: Highest-rated items (Gloves, Sandals, Boots) and category leaders (for example, Jewelry, Pants, Blouse, Sandals) show strong customer preference.   
-- Shipping: Express users spend about 3.5% more on average than Standard users (60.48 vs 58.46).   
-- Lifecycle segments: Loyal (3,116) and Returning (701) customers form the core base, yet many repeat buyers remain unsubscribed.   
-- Geo and age: Locations like Alaska, Pennsylvania, and Arizona have the highest revenue per customer, with Young Adults leading total revenue.   
-- Payment: High‑value customers contribute 30–37% of revenue across payment methods, with Debit Card, PayPal, and Venmo having the highest high‑value share. 
-
-
+- **Monetize Express customers**  
+  - Insight: Express users have higher AOV than Standard users.  
+  - Action: Create a “fast-track” tier with Express shipping, early access, and urgency-based offers to lift AOV by 2–3%.
