@@ -7,6 +7,7 @@ Analyzed 3,900 retail transactions with Python, BigQuery, and Power BI to find r
 - 73% of repeat buyers (5+ purchases) are not subscribed, representing a high-ROI target for loyalty and subscription programs.
 - Hat, Sneakers, Coat, Sweater, and Pants rely on 47–50% discounts, suggesting margin erosion and need for pricing tests. 
 - Express shipping users show 3.5% higher AOV (USD 60.48 vs 58.46), indicating a premium, convenience-focused segment.
+>[Customer Behavior Dashboard](powerbi_dashboard.png)
 
 ## Business Problem
 How can the business grow revenue and CLV while protecting margins?
