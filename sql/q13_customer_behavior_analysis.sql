@@ -5,7 +5,7 @@ WITH customer_spend AS (
   SELECT
     customer_id,
     SUM(purchase_amount) AS total_spend
-  FROM `dotted-music-443114-f2.customer_analysis.customer_behavior`
+  FROM `your project id`
   GROUP BY customer_id
 ),
 
@@ -39,8 +39,9 @@ SELECT
     SUM(purchase_amount),
     SUM(SUM(purchase_amount)) OVER (PARTITION BY payment_method)
   ) AS revenue_share_within_payment_method
-FROM `dotted-music-443114-f2.customer_analysis.customer_behavior` cb
+FROM `your project id` cb
 JOIN labeled_customers lc
   ON cb.customer_id = lc.customer_id
 GROUP BY payment_method, customer_segment
 ORDER BY payment_method, customer_segment;
+
