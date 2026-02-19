@@ -38,3 +38,7 @@ How can the business grow revenue and CLV while protecting margins?
 - **Monetize Express customers**  
   - Insight: Express users have higher AOV than Standard users.  
   - Action: Create a “fast-track” tier with Express shipping, early access, and urgency-based offers to lift AOV by 2–3%.
+
+ ## Role & skills demonstrated
+ - **Skills demonstrated:** exploratory data analysis, SQL-based segmentation, cohort analysis, KPI definition, data visualization in Power BI, and translating insights into business recommendations
+ - **Role:** end-to-end owner from data cleaning to dashboard and executive summary.
