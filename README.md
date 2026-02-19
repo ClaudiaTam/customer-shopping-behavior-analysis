@@ -42,3 +42,7 @@ How can the business grow revenue and CLV while protecting margins?
  ## Role & skills demonstrated
  - **Skills demonstrated:** exploratory data analysis, SQL-based segmentation, cohort analysis, KPI definition, data visualization in Power BI, and translating insights into business recommendations
  - **Role:** end-to-end owner from data cleaning to dashboard and executive summary.
+
+
+## Reference
+https://github.com/amlanmohanty1/customer-trends-data-analysis-SQL-Python-PowerBI/tree/main
